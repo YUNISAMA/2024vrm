@@ -5,37 +5,6 @@ title: Home
 
 {% if page.url == "/" %}
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-    <div class="row">
-
-        {% assign featured_limit = 4 %}
-
-        {% for post in site.posts %}
-
-            {% if post.featured == true and featured_limit > 0 %}
-
-                {% assign featured_limit = featured_limit | minus : 1 %}
-
-                {% include featuredbox.html %}
-
-            {% elsif featured_limit <= 0 %}
-
-                {% break %}
-
-            {% endif %}
-
-        {% endfor %}
-
-    </div>
-</section>
-
-{% endif %}
-
 <!-- Posts Index
 ================================================== -->
 <section class="recent-posts">
