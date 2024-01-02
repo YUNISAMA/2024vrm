@@ -38,6 +38,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  
+# Pagination
+paginate: 20
+paginate_path: /page:num/
     
 # Archives
 jekyll-archives:
